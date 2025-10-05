@@ -27,6 +27,16 @@ class FetchLatestMarketDate extends Command
         $response = Http::get($url);
 
         if (!$response->successful()) {
+            $status = $response->status();
+            $body = $response->body();
+
+            // Log detailed info
+            Log::error('Polygon API request failed', [
+                'url' => $url,
+                'status' => $status,
+                'response' => $body,
+            ]);
+            
             $this->error("Polygon API request failed.");
             return;
         }
