@@ -1066,7 +1066,6 @@ class PortfolioService
                     $lastMonth = Carbon::parse($lastDividend->payment_date)->month;
                     $interval = 12 / $security->dividend_payout_frequency;
 
-                    dd($lastMonth, $interval);
                     $estimatedMonths = collect(range($lastMonth, 12, $interval))
                         ->map(fn($m) => $m > 12 ? $m - 12 : $m)
                         ->unique();
