@@ -19,7 +19,7 @@ class AuthenticatedSessionController extends Controller
     public function create(Request $request)
     {
         if ($request->demo === 'true') {
-            Auth::loginUsingId(1);
+            Auth::loginUsingId(2); // Demo User
 
             return to_route('dashboard.index');
         }
