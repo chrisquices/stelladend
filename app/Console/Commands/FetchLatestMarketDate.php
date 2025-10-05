@@ -36,7 +36,7 @@ class FetchLatestMarketDate extends Command
                 'status' => $status,
                 'response' => $body,
             ]);
-            
+
             $this->error("Polygon API request failed.");
             return;
         }

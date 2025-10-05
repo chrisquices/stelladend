@@ -100,7 +100,7 @@ export default {
             googleLogo: googleLogo,
 
             loginForm: useForm({
-                email: 'user@stelladend.com',
+                email: 'demo@stelladend.com',
                 password: 'password',
             }),
         };
