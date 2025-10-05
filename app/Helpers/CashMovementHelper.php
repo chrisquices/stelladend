@@ -14,6 +14,7 @@ class CashMovementHelper
         $dividend = 'dividend_received';
         $interest = 'interest';
         $other = 'other';
+        $cashDividend = 'cash_dividend';
 
         return match ($type) {
             // System types
@@ -37,6 +38,7 @@ class CashMovementHelper
             'credit interest' => $interest,
             'reinvest dividend' => $dividend,
             'reinvest shares' => $securityBuyDrip,
+            'cash dividend' => $cashDividend,
 
 
             default => 'Unknown',
@@ -53,6 +55,7 @@ class CashMovementHelper
         $dividend = 'Dividend Received';
         $interest = 'Interest';
         $other = 'Other';
+        $cashDividend = 'Cash Dividend';
 
         return match ($type) {
             // System types
@@ -64,6 +67,7 @@ class CashMovementHelper
             'dividend_received' => $dividend,
             'interest' => $interest,
             'other' => $other,
+            'cash_dividend' => $cashDividend,
 
             default => 'Unknown',
         };

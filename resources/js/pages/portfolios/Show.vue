@@ -160,19 +160,19 @@
                 <UpcomingDividendsCompact :portfolio="selectedPortfolio" :upcomingDividends="upcomingDividends" />
             </div>
 
-<!--            &lt;!&ndash; Performance &ndash;&gt;-->
-<!--            <div class="col-span-full space-y-4 lg:col-span-full">-->
-<!--                <div class="flex items-center justify-between">-->
-<!--                    <div class="flex items-center gap-2">-->
-<!--                        <i class="lni lni-trend-up-1 !text-xl"></i>-->
-<!--                        <p class="text-xl font-medium text-text">Performance</p>-->
-<!--                    </div>-->
-<!--                </div>-->
+            <!-- Performance -->
+            <div class="col-span-full space-y-4 lg:col-span-full">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="lni lni-trend-up-1 !text-xl"></i>
+                        <p class="text-xl font-medium text-text">Performance</p>
+                    </div>
+                </div>
 
-<!--                <Card>-->
-<!--                    <Performance :performance="performance" class="col-span-full lg:col-span-2" />-->
-<!--                </Card>-->
-<!--            </div>-->
+                <Card>
+                    <Performance :performance="performance" class="col-span-full lg:col-span-2" />
+                </Card>
+            </div>
         </div>
 
         <!-- Upcoming Dividends -->
@@ -185,10 +185,10 @@
             <DividendsReceived v-if="selectedPortfolio.mode === 'advanced'" :portfolio="selectedPortfolio" :dividendsReceived="dividendsReceived" />
         </div>
 
-<!--        &lt;!&ndash; Cash Movements &ndash;&gt;-->
-<!--        <div v-if="selectedTab === 'cash-movements'" class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">-->
-<!--            <CashMovements v-if="selectedPortfolio.mode === 'advanced'" :portfolio="selectedPortfolio" :cashMovements="cashMovements" />-->
-<!--        </div>-->
+        <!-- Cash Movements -->
+        <div v-if="selectedTab === 'cash-movements'" class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
+            <CashMovements v-if="selectedPortfolio.mode === 'advanced'" :portfolio="selectedPortfolio" :cashMovements="cashMovements" />
+        </div>
     </AuthLayout>
 </template>
 

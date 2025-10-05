@@ -101,13 +101,13 @@
                             Dividends Received
                         </Link>
 
-<!--                        <Link-->
-<!--                            :href="route('portfolios.show', { portfolioUid: selectedPortfolio.uid, tab: 'cash-movements' })"-->
-<!--                            class="flex-shrink-0 flex h-10 items-center justify-center gap-2 rounded-full px-3 py-2 text-sm tracking-wide text-text-muted transition-all duration-300 whitespace-nowrap hover:bg-primary/20 sm:px-4 sm:py-1"-->
-<!--                            :class="{ 'bg-primary !text-text-inverted': selectedTab === 'cash-movements' }"-->
-<!--                        >-->
-<!--                            Cash Movements-->
-<!--                        </Link>-->
+                        <Link
+                            :href="route('portfolios.show', { portfolioUid: selectedPortfolio.uid, tab: 'cash-movements' })"
+                            class="flex-shrink-0 flex h-10 items-center justify-center gap-2 rounded-full px-3 py-2 text-sm tracking-wide text-text-muted transition-all duration-300 whitespace-nowrap hover:bg-primary/20 sm:px-4 sm:py-1"
+                            :class="{ 'bg-primary !text-text-inverted': selectedTab === 'cash-movements' }"
+                        >
+                            Cash Movements
+                        </Link>
                     </div>
                 </div>
             </div>
