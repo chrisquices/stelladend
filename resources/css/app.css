@@ -164,7 +164,7 @@
     --input: hsl(0, 0%, 100%);
     --input-foreground: hsl(210, 40%, 96%);
     --sidebar-background: hsl(0, 0%, 98%);
-    --hover: hsla(240, 10%, 4%, 0.1);
+    --hover: hsla(175, 84%, 32%, 0.1);
     --tooltip-background: hsl(0, 0%, 100%);
     --switch-accent: hsl(240, 6%, 90%);
 }
@@ -186,7 +186,7 @@
     --input: hsl(213, 24%, 15%);
     --input-foreground: hsl(224, 29%, 10%);
     --sidebar-background: hsl(213, 24%, 15%);
-    --hover: hsla(174, 41%, 29%, 0.1);
+    --hover: hsla(174, 41%, 29%, 0.3);
     --tooltip-background: hsl(213, 24%, 15%);
     --switch-accent: hsl(220, 12%, 95%);
 }
@@ -208,7 +208,7 @@
     --input: hsl(0, 0%, 100%);
     --input-foreground: hsl(210, 40%, 96%);
     --sidebar-background: hsl(0, 0%, 98%);
-    --hover: hsla(240, 10%, 4%, 0.1);
+    --hover: hsla(201, 96%, 32%, 0.1);
     --tooltip-background: hsl(0, 0%, 100%);
     --switch-accent: hsl(0, 0%, 100%);
 }
@@ -230,7 +230,7 @@
     --input: hsl(217, 33%, 17%);
     --input-foreground: hsl(222, 47%, 11%);
     --sidebar-background: hsl(217, 33%, 17%);
-    --hover: hsla(200, 98%, 39%, 0.1);
+    --hover: hsla(201, 96%, 32%, 0.3);
     --tooltip-background: hsl(217, 33%, 17%);
     --switch-accent: hsl(220, 12%, 95%);
 }
@@ -252,7 +252,7 @@
     --input: hsl(0, 0%, 98%);
     --input-foreground: hsl(240, 6%, 90%);
     --sidebar-background: hsl(0, 0%, 98%);
-    --hover: hsla(240, 10%, 4%, 0.1);
+    --hover: hsla(240, 4%, 16%, 0.1);
     --tooltip-background: hsl(0, 0%, 98%);
     --switch-accent: hsl(240, 6%, 90%);
 }
@@ -274,7 +274,7 @@
     --input: hsl(240, 4%, 16%);
     --input-foreground: hsl(240, 6%, 10%);
     --sidebar-background: hsl(240, 4%, 16%);
-    --hover: hsla(240, 10%, 4%, 0.2);
+    --hover: hsla(240, 10%, 4%, 0.3);
     --tooltip-background: hsl(240, 4%, 16%);
     --switch-accent: hsl(220, 12%, 95%);
 }
