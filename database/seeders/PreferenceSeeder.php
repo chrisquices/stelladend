@@ -17,7 +17,7 @@ class PreferenceSeeder extends Seeder
             [
                 'user_id'               => 1,
                 'secondary_currency_id' => null,
-                'theme'                 => 'onyx-dark',
+                'theme'                 => 'emerald-light',
             ],
         ];
 

@@ -28,7 +28,7 @@ class PreferenceService
         Preference::insert([
             'user_id'               => $user->id,
             'secondary_currency_id' => null,
-            'theme'                 => 'onyx-dark',
+            'theme'                 => 'emerald-light',
             'has_been_welcomed'     => false
         ]);
     }
