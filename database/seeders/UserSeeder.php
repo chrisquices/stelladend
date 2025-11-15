@@ -13,7 +13,6 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'name'     => 'Christopher Quiñonez',
                 'email'    => 'chrisquices@gmail.com',
                 'password' => '$2y$12$RRNRvgEu6otXgxIDUt8IGeM6yCEaNub/0UZPGBDxmoUn8HO3sC04C',
             ],
@@ -21,7 +20,6 @@ class UserSeeder extends Seeder
 
         foreach ($users as $user) {
             User::insert([
-                'name'     => $user['name'],
                 'email'    => $user['email'],
                 'password' => $user['password'],
             ]);

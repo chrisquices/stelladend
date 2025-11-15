@@ -92,7 +92,7 @@
                 <div class="flex items-center justify-between">
                     <p class="text-xl font-medium text-text">
                         Secondary Currency
-<!--                        <span class="ml-2 font-mono font-semibold tracking-widest text-yellow-500 uppercase">PREMIUM</span>-->
+                        <!--                        <span class="ml-2 font-mono font-semibold tracking-widest text-yellow-500 uppercase">PREMIUM</span>-->
                     </p>
                 </div>
 
@@ -133,81 +133,17 @@
                 <Card>
                     <div class="flex flex-col space-y-2">
                         <div class="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-3">
-                            <!-- Onyx Dark -->
-                            <div class="order-1 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
-                                <div class="onyx-dark relative w-full" @click="selectTheme('onyx-dark')">
-                                    <div
-                                        v-if="theme === 'onyx-dark'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
-                                    >
-                                        Selected
-                                    </div>
-                                    <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
-                                    ></div>
-                                </div>
-                                <p>Onyx Dark</p>
-                            </div>
-
-                            <!-- Emerald Dark -->
-                            <div class="order-3 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
-                                <div class="emerald-dark relative w-full" @click="selectTheme('emerald-dark')">
-                                    <div
-                                        v-if="theme === 'emerald-dark'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
-                                    >
-                                        Selected
-                                    </div>
-                                    <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
-                                    ></div>
-                                </div>
-                                <p>Emerald Dark</p>
-                            </div>
-
-                            <!-- Sapphire Dark -->
-                            <div class="order-5 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
-                                <div class="sapphire-dark relative w-full" @click="selectTheme('sapphire-dark')">
-                                    <div
-                                        v-if="theme === 'sapphire-dark'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
-                                    >
-                                        Selected
-                                    </div>
-                                    <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
-                                    ></div>
-                                </div>
-                                <p>Sapphire Dark</p>
-                            </div>
-
-                            <!-- Onyx Light -->
-                            <div class="order-2 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
-                                <div class="onyx-light relative w-full" @click="selectTheme('onyx-light')">
-                                    <div
-                                        v-if="theme === 'onyx-light'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
-                                    >
-                                        Selected
-                                    </div>
-                                    <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
-                                    ></div>
-                                </div>
-                                <p>Onyx Light</p>
-                            </div>
-
                             <!-- Emerald Light -->
                             <div class="order-4 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
                                 <div class="emerald-light relative w-full" @click="selectTheme('emerald-light')">
                                     <div
                                         v-if="theme === 'emerald-light'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs transition-all duration-300"
                                     >
-                                        Selected
+                                        <span class="rounded-lg bg-black/50 px-2 py-1 text-white">Selected</span>
                                     </div>
                                     <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
                                     ></div>
                                 </div>
                                 <p>Emerald Light</p>
@@ -218,15 +154,79 @@
                                 <div class="sapphire-light relative w-full" @click="selectTheme('sapphire-light')">
                                     <div
                                         v-if="theme === 'sapphire-light'"
-                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent bg-card-foreground text-xs transition-all duration-300"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs text-white transition-all duration-300"
                                     >
                                         Selected
                                     </div>
                                     <div
-                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background-corner via-background to-background-corner"
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
                                     ></div>
                                 </div>
                                 <p>Sapphire Light</p>
+                            </div>
+
+                            <!-- Onyx Light -->
+                            <div class="order-2 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
+                                <div class="onyx-light relative w-full" @click="selectTheme('onyx-light')">
+                                    <div
+                                        v-if="theme === 'onyx-light'"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs text-white transition-all duration-300"
+                                    >
+                                        Selected
+                                    </div>
+                                    <div
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
+                                    ></div>
+                                </div>
+                                <p>Onyx Light</p>
+                            </div>
+
+                            <!-- Emerald Dark -->
+                            <div class="order-3 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
+                                <div class="emerald-dark relative w-full" @click="selectTheme('emerald-dark')">
+                                    <div
+                                        v-if="theme === 'emerald-dark'"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs text-white transition-all duration-300"
+                                    >
+                                        Selected
+                                    </div>
+                                    <div
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
+                                    ></div>
+                                </div>
+                                <p>Emerald Dark</p>
+                            </div>
+
+                            <!-- Sapphire Dark -->
+                            <div class="order-5 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
+                                <div class="sapphire-dark relative w-full" @click="selectTheme('sapphire-dark')">
+                                    <div
+                                        v-if="theme === 'sapphire-dark'"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs text-white transition-all duration-300"
+                                    >
+                                        Selected
+                                    </div>
+                                    <div
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
+                                    ></div>
+                                </div>
+                                <p>Sapphire Dark</p>
+                            </div>
+
+                            <!-- Onyx Dark -->
+                            <div class="order-1 flex flex-col items-center justify-center space-y-4 text-sm sm:order-none">
+                                <div class="onyx-dark relative w-full" @click="selectTheme('onyx-dark')">
+                                    <div
+                                        v-if="theme === 'onyx-dark'"
+                                        class="absolute inset-0 flex h-full items-center justify-center rounded-lg border-2 border-accent text-xs text-white transition-all duration-300"
+                                    >
+                                        Selected
+                                    </div>
+                                    <div
+                                        class="h-24 w-full cursor-pointer rounded-lg bg-gradient-to-br from-background from-50% to-primary to-50%"
+                                    ></div>
+                                </div>
+                                <p>Onyx Dark</p>
                             </div>
                         </div>
                     </div>
@@ -256,6 +256,7 @@
 </template>
 
 <script>
+import AlertDialog from '@/components/ui/AlertDialog.vue';
 import Button from '@/components/ui/Button.vue';
 import Card from '@/components/ui/Card.vue';
 import InputError from '@/components/ui/InputError.vue';
@@ -264,7 +265,6 @@ import TextLabel from '@/components/ui/TextLabel.vue';
 import AuthLayout from '@/layouts/AuthLayout.vue';
 import { Head, Link, router, useForm, usePage } from '@inertiajs/vue3';
 import { toast } from 'vue-sonner';
-import AlertDialog from '@/components/ui/AlertDialog.vue';
 
 export default {
     components: {
@@ -313,8 +313,8 @@ export default {
     methods: {
         selectCurrency(currencyId) {
             if (!this.isPremium) {
-                this.toggleUpgradeToPremiumAlertDialog()
-                return
+                this.toggleUpgradeToPremiumAlertDialog();
+                return;
             }
 
             router.patch(

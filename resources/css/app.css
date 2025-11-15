@@ -147,47 +147,25 @@
     --switch-accent: hsl(0 0% 98%);
 }
 
-.onyx-dark {
-    --text: hsl(240, 7%, 89%);
-    --text-muted: hsl(240, 5%, 71%);
-    --text-inverted: hsl(240, 7%, 89%);
-    --background: hsl(240, 6%, 10%);
-    --background-corner: hsl(240, 6%, 10%);
-    --card: hsl(240, 4%, 16%);
-    --card-foreground: hsl(240, 6%, 10%);
-    --primary: hsl(240, 10%, 4%);
-    --primary-foreground: hsl(240, 10%, 4%);
-    --accent: hsl(210, 40%, 96%);
-    --restorative: hsl(161, 98%, 36%);
-    --destructive: hsl(0, 76%, 49%);
-    --border: hsla(240, 10%, 4%);
-    --input: hsl(240, 4%, 16%);
-    --input-foreground: hsl(240, 6%, 10%);
-    --sidebar-background: hsl(240, 4%, 16%);
-    --hover: hsla(240, 10%, 4%, 0.2);
-    --tooltip-background: hsl(240, 4%, 16%);
-    --switch-accent: hsl(220, 12%, 95%);
-}
-
-.onyx-light {
+.emerald-light {
     --text: hsl(240, 5%, 26%);
     --text-muted: hsl(240, 5%, 34%);
-    --text-inverted: hsl(240, 7%, 89%);
-    --background: hsl(240, 6%, 90%);
-    --background-corner: hsl(240, 6%, 90%);
-    --card: hsl(0, 0%, 98%);
-    --card-foreground: hsl(240, 6%, 90%);
-    --primary: hsl(240, 4%, 16%);
-    --primary-foreground: hsl(240, 4%, 16%);
-    --accent: hsl(240, 4%, 16%);
+    --text-inverted: hsl(214, 32%, 91%);
+    --background: hsl(210, 40%, 96%);
+    --background-corner: hsl(210, 40%, 96%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(210, 40%, 96%);
+    --primary: hsl(175, 84%, 32%);
+    --primary-foreground: hsl(175, 84%, 32%);
+    --accent: hsl(174, 41%, 29%);
     --restorative: hsl(161, 94%, 30%);
     --destructive: hsl(0, 72%, 51%);
-    --border: hsla(240, 10%, 4%, 0.5);
-    --input: hsl(0, 0%, 98%);
-    --input-foreground: hsl(240, 6%, 90%);
+    --border: hsla(174, 41%, 29%, 0.5);
+    --input: hsl(0, 0%, 100%);
+    --input-foreground: hsl(210, 40%, 96%);
     --sidebar-background: hsl(0, 0%, 98%);
     --hover: hsla(240, 10%, 4%, 0.1);
-    --tooltip-background: hsl(0, 0%, 98%);
+    --tooltip-background: hsl(0, 0%, 100%);
     --switch-accent: hsl(240, 6%, 90%);
 }
 
@@ -213,7 +191,7 @@
     --switch-accent: hsl(220, 12%, 95%);
 }
 
-.emerald-light {
+.sapphire-light {
     --text: hsl(240, 5%, 26%);
     --text-muted: hsl(240, 5%, 34%);
     --text-inverted: hsl(214, 32%, 91%);
@@ -221,18 +199,18 @@
     --background-corner: hsl(210, 40%, 96%);
     --card: hsl(0, 0%, 100%);
     --card-foreground: hsl(210, 40%, 96%);
-    --primary: hsl(174, 41%, 29%);
-    --primary-foreground: hsl(174, 41%, 29%);
-    --accent: hsl(174, 41%, 29%);
+    --primary: hsl(201, 96%, 32%);
+    --primary-foreground: hsl(201, 96%, 32%);
+    --accent: hsl(201, 96%, 32%);
     --restorative: hsl(161, 94%, 30%);
     --destructive: hsl(0, 72%, 51%);
-    --border: hsla(174, 41%, 29%, 0.5);
+    --border: hsla(201, 96%, 32%, 0.5);
     --input: hsl(0, 0%, 100%);
     --input-foreground: hsl(210, 40%, 96%);
     --sidebar-background: hsl(0, 0%, 98%);
     --hover: hsla(240, 10%, 4%, 0.1);
     --tooltip-background: hsl(0, 0%, 100%);
-    --switch-accent: hsl(240, 6%, 90%);
+    --switch-accent: hsl(0, 0%, 100%);
 }
 
 .sapphire-dark {
@@ -257,26 +235,48 @@
     --switch-accent: hsl(220, 12%, 95%);
 }
 
-.sapphire-light {
+.onyx-light {
     --text: hsl(240, 5%, 26%);
     --text-muted: hsl(240, 5%, 34%);
-    --text-inverted: hsl(214, 32%, 91%);
-    --background: hsl(210, 40%, 96%);
-    --background-corner: hsl(210, 40%, 96%);
-    --card: hsl(0, 0%, 100%);
-    --card-foreground: hsl(210, 40%, 96%);
-    --primary: hsl(201, 96%, 32%);
-    --primary-foreground: hsl(201, 96%, 32%);
-    --accent: hsl(201, 96%, 32%);
+    --text-inverted: hsl(240, 7%, 89%);
+    --background: hsl(240, 6%, 90%);
+    --background-corner: hsl(240, 6%, 90%);
+    --card: hsl(0, 0%, 98%);
+    --card-foreground: hsl(240, 6%, 90%);
+    --primary: hsl(240, 4%, 16%);
+    --primary-foreground: hsl(240, 4%, 16%);
+    --accent: hsl(240, 4%, 16%);
     --restorative: hsl(161, 94%, 30%);
     --destructive: hsl(0, 72%, 51%);
-    --border: hsla(201, 96%, 32%, 0.5);
-    --input: hsl(0, 0%, 100%);
-    --input-foreground: hsl(210, 40%, 96%);
+    --border: hsla(240, 10%, 4%, 0.5);
+    --input: hsl(0, 0%, 98%);
+    --input-foreground: hsl(240, 6%, 90%);
     --sidebar-background: hsl(0, 0%, 98%);
     --hover: hsla(240, 10%, 4%, 0.1);
-    --tooltip-background: hsl(0, 0%, 100%);
-    --switch-accent: hsl(0, 0%, 100%);
+    --tooltip-background: hsl(0, 0%, 98%);
+    --switch-accent: hsl(240, 6%, 90%);
+}
+
+.onyx-dark {
+    --text: hsl(240, 7%, 89%);
+    --text-muted: hsl(240, 5%, 71%);
+    --text-inverted: hsl(240, 7%, 89%);
+    --background: hsl(240, 6%, 10%);
+    --background-corner: hsl(240, 6%, 10%);
+    --card: hsl(240, 4%, 16%);
+    --card-foreground: hsl(240, 6%, 10%);
+    --primary: hsl(240, 10%, 4%);
+    --primary-foreground: hsl(240, 10%, 4%);
+    --accent: hsl(210, 40%, 96%);
+    --restorative: hsl(161, 98%, 36%);
+    --destructive: hsl(0, 76%, 49%);
+    --border: hsla(240, 10%, 4%);
+    --input: hsl(240, 4%, 16%);
+    --input-foreground: hsl(240, 6%, 10%);
+    --sidebar-background: hsl(240, 4%, 16%);
+    --hover: hsla(240, 10%, 4%, 0.2);
+    --tooltip-background: hsl(240, 4%, 16%);
+    --switch-accent: hsl(220, 12%, 95%);
 }
 
 @layer base {

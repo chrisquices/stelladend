@@ -17,10 +17,10 @@ class HandleAppearance
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $appearance = 'onyx-dark';
+        $appearance = 'emerald-light';
 
         if (Auth::check()) {
-            $appearance = Auth::user()->preferences->theme ?? 'onyx-dark';
+            $appearance = Auth::user()->preferences->theme ?? 'emerald-light';
         } elseif ($request->hasCookie('appearance')) {
             $appearance = $request->cookie('appearance');
         }
