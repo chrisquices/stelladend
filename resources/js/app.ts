@@ -61,9 +61,15 @@ createInertiaApp({
             .mount(el);
     },
     progress: {
-        color: '#4B5563',
+        color: cssVar('--primary'),
     },
 });
+
+export function cssVar(name: string): string {
+    return getComputedStyle(document.documentElement)
+        .getPropertyValue(name)
+        .trim();
+}
 
 // This will set light / dark mode on page load...
 // initializeTheme();
