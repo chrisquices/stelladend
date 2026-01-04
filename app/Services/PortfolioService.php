@@ -271,8 +271,8 @@ class PortfolioService
             $cashAvailable += $cash->amount;
         }
 
-        $transactionsIndex = $allTransactions->search(fn($t) => $t->trade_date >= $startingDate) ?? 0;
-        $cashIndex = $allCashMovements->search(fn($c) => $c->date >= $startingDate) ?? 0;
+        $transactionsIndex = $allTransactions->search(fn($t) => $t->trade_date >= $startingDate) ?: 0;
+        $cashIndex = $allCashMovements->search(fn($c) => $c->date >= $startingDate) ?: 0;
 
         $transactionCount = $allTransactions->count();
         $cashMovementsCount = $allCashMovements->count();
