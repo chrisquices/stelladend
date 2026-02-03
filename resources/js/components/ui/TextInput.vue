@@ -100,9 +100,14 @@ export default {
 
             const escapedDec = dec.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
 
-            // Remove invalid characters
-            const allowedCharsRegex = new RegExp(`[^\\d${escapedDec}]`, 'g');
+            const allowedCharsRegex = new RegExp(`[^\\d${escapedDec}-]`, 'g');
             raw = raw.replace(allowedCharsRegex, '');
+
+            const hasNegative = raw.startsWith('-');
+            raw = raw.replace(/-/g, '');
+            if (hasNegative) {
+                raw = '-' + raw;
+            }
 
             // Handle decimals
             const parts = raw.split(dec);
